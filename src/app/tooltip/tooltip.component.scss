@@ -1,0 +1,43 @@
+.container {
+  background: #333;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+
+  &[data-popper-placement^="top"] > .caret {
+    bottom: -4px;
+  }
+
+  &[data-popper-placement^="bottom"] > .caret {
+    top: -4px;
+  }
+
+  &[data-popper-placement^="left"] > .caret {
+    right: -4px;
+  }
+
+  &[data-popper-placement^="right"] > .caret {
+    left: -4px;
+  }
+}
+
+.caret,
+.caret::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+  left: calc(50% - 4px);
+}
+
+.caret {
+  visibility: hidden;
+
+  &::before {
+    visibility: visible;
+    content: "";
+    transform: rotate(45deg);
+  }
+}

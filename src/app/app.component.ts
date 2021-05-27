@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxPopperjsPlacements, NgxPopperjsTriggers } from 'ngx-popperjs';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'popper-app';
+
+  readonly NgxPopperTriggers = NgxPopperjsTriggers;
+  readonly NgxPopperPlacements = NgxPopperjsPlacements;
 }

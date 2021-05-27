@@ -1,0 +1,10 @@
+<div #container class="container" role="tooltip">
+  <ng-content></ng-content>
+  <div
+    *ngIf="showCaret"
+    #caret
+    class="caret"
+    data-popper-arrow
+  >
+  </div>
+</div>
