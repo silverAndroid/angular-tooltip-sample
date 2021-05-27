@@ -1,8 +1,6 @@
 # PopperApp
 
-
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+Example project in Angular using [popper.js](https://popper.js.org/) to show tooltips
 
 ## Development server
 
